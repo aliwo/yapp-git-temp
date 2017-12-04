@@ -25,27 +25,27 @@ $('.to-top-btn').click(function() {
 
 // count up intro page
 
-if ($(window).scrollTop() > $('.intro_count').offset().top - $('.intro_count').offset().top / 2) {
-    $('.intro_count .num').each(function() {
-        var $this = $(this),
-            countTo = $this.attr('data-count');
+// if ($(window).scrollTop() > $('.intro_count').offset().top - $('.intro_count').offset().top / 2) {
+//     $('.intro_count .num').each(function() {
+//         var $this = $(this),
+//             countTo = $this.attr('data-count');
         
-        $({ countNum: $this.text() }).animate({
-                countNum: countTo
-            },
-            {
-            duration: 8000,
-            easing: 'linear',
-            step: function() {
-                $this.text(Math.floor(this.countNum));
-            },
-            complete: function() {
-                $this.text(this.countNum);
-                //alert('finished');
-            }
-        });
-    });
-} 
+//         $({ countNum: $this.text() }).animate({
+//                 countNum: countTo
+//             },
+//             {
+//             duration: 8000,
+//             easing: 'linear',
+//             step: function() {
+//                 $this.text(Math.floor(this.countNum));
+//             },
+//             complete: function() {
+//                 $this.text(this.countNum);
+//                 //alert('finished');
+//             }
+//         });
+//     });
+// } 
 
 
 // fullpage js

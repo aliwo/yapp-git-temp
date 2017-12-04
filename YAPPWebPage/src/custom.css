@@ -186,15 +186,15 @@ h1, h2, h3, h4, h5, h6, div, p {
 }
 
 .yp_main_slide .carousel-item:nth-child(1)  {
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('/YAPPWebPage/public/img/main/main_slide01.jpg') no-repeat center / cover;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../public/img/main/main_slide01.jpg') no-repeat center / cover;
 }
 
 .yp_main_slide .carousel-item:nth-child(2) {
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('/YAPPWebPage/public/img/main/main_slide02.jpg') no-repeat center / cover;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../public/img/main/main_slide02.jpg') no-repeat center / cover;
 }
 
 .yp_main_slide .carousel-item:nth-child(3) {
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('/YAPPWebPage/public/img/main/main_slide03.jpg') no-repeat center / cover;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../public/img/main/main_slide03.jpg') no-repeat center / cover;
 }
 
 .carousel-caption {
@@ -294,7 +294,7 @@ h1, h2, h3, h4, h5, h6, div, p {
 
 #introduction > .intro_count {
     padding: 120px 0;
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('/YAPPWebPage/public/img/intro_count_bg.jpg') no-repeat center / cover;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../public/img/intro_count_bg.jpg') no-repeat center / cover;
     background-position-y: 60%;
     background-attachment: fixed;
 }
@@ -377,15 +377,15 @@ h1, h2, h3, h4, h5, h6, div, p {
     transition: all .4s ease;
 }
 
-#activity .activity_content .activity_sect01 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('/YAPPWebPage/public/img/main/main_activity01.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect02 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('/YAPPWebPage/public/img/main/main_activity02.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect03 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('/YAPPWebPage/public/img/main/main_activity03.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect04 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('/YAPPWebPage/public/img/main/main_activity04.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect01 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../public/img/main/main_activity01.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect02 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../public/img/main/main_activity02.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect03 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../public/img/main/main_activity03.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect04 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../public/img/main/main_activity04.jpg') no-repeat center / cover; }
 
-#activity .activity_content .activity_sect01:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('/YAPPWebPage/public/img/main/main_activity01.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect02:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('/YAPPWebPage/public/img/main/main_activity02.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect03:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('/YAPPWebPage/public/img/main/main_activity03.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect04:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('/YAPPWebPage/public/img/main/main_activity04.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect01:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../public/img/main/main_activity01.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect02:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../public/img/main/main_activity02.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect03:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../public/img/main/main_activity03.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect04:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../public/img/main/main_activity04.jpg') no-repeat center / cover; }
 
 
 #activity .activity_content h4 {

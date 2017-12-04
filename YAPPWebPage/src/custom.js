@@ -23,6 +23,30 @@ $('.to-top-btn').click(function() {
     $('html, body').animate({scrollTop: '0'}, 600);
 });
 
+// count up intro page
+
+if ($(window).scrollTop() > $('.intro_count').offset().top - $('.intro_count').offset().top / 2) {
+    $('.intro_count .num').each(function() {
+        var $this = $(this),
+            countTo = $this.attr('data-count');
+        
+        $({ countNum: $this.text() }).animate({
+                countNum: countTo
+            },
+            {
+            duration: 8000,
+            easing: 'linear',
+            step: function() {
+                $this.text(Math.floor(this.countNum));
+            },
+            complete: function() {
+                $this.text(this.countNum);
+                //alert('finished');
+            }
+        });
+    });
+} 
+
 
 // fullpage js
 
@@ -31,6 +55,7 @@ $(document).ready(function() {
 	    menu: '#activityNav',
 	    loopBottom: false,
 		loopTop: false,
+		responsiveWidth: 1300,
 		anchors: ['firstSect', 'secondSect', 'thirdSect', 'fourthSect']
 	});
 });

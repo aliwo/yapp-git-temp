@@ -15,6 +15,8 @@ body {
 .yp_main_content section:not(#introduction) {
     padding: 150px 0;
     border-top: 1px solid #eee;
+    padding-left: 17.9vw; /* SW pc 버전일 때 좌우 패딩을 넣습니다. */
+    padding-right: 17.9vw;
 }
 
 
@@ -182,7 +184,7 @@ h1, h2, h3, h4, h5, h6, div, p {
 /* 메인 슬라이드 영역 */
 
 .yp_main_slide .carousel-item {
-    height: 100vh;
+    height: 90vh; /* 2018-02-24 SW 호재님 요청으로 높이를 줄였습니다. */
 }
 
 .yp_main_slide .carousel-item:nth-child(1)  {
@@ -317,8 +319,11 @@ h1, h2, h3, h4, h5, h6, div, p {
 }
 
 #introduction > .intro_content {
+    padding-left: 17.9vw; /* SW pc 버전일 때 좌우 패딩을 넣습니다. */
+    padding-right: 17.9vw;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background: #f9f9f9;
-    padding: 100px 0;
 }
 
 #introduction>.intro_content h4 {
@@ -371,7 +376,7 @@ h1, h2, h3, h4, h5, h6, div, p {
 }
 
 #activity .activity_content div[class*="activity_sect"] {
-    height: 750px;
+    height: 478px;
     padding: 70px 35px;
     border: 1px solid #eee;
     transition: all .4s ease;

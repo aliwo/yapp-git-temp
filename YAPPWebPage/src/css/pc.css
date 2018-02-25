@@ -1,0 +1,4 @@
+.navbar-nav.nav-justified.navbar-resp { /* resp(responsive) 가 붙은 부분은  pc 혹은 mobile.css 에서 서로를 덮어 씌우도록 합시다. */
+    left: unset;
+    margin-right: 163px;
+}

@@ -265,8 +265,8 @@ h1, h2, h3, h4, h5, h6, div, p {
 .about_txt>p {
     font-size: 18px;
     font-weight: 300;
-    line-height: 1.44;
-    letter-spacing: -0.7px;
+    line-height: 38px;
+    letter-spacing: -1px;
 }
 
 .about_txt>p > span {
@@ -276,10 +276,6 @@ h1, h2, h3, h4, h5, h6, div, p {
 
 .about_txt > p + p {
     margin-top: 30px;
-}
-
-.yp_main_content #about img {
-    margin-top: 95px;
 }
 
 #history {
@@ -372,6 +368,9 @@ h1, h2, h3, h4, h5, h6, div, p {
     padding: 70px 35px;
     border: 1px solid #eee;
     transition: all .4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #activity .activity_content .activity_sect01 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../public/img/main/main_activity01.jpg') no-repeat center / cover; }
@@ -386,15 +385,24 @@ h1, h2, h3, h4, h5, h6, div, p {
 
 
 #activity .activity_content h4 {
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 1.4;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.3px;
     text-align: left;
     color: #ffffff;
 }
 
-#activity .activity_content div[class*="activity_sect"]:hover h4 {
+#activity .activity_content div[class*="activity_sect"] h4[class*="on_hover"] {
+    display: none;
+}
+
+#activity .activity_content div[class*="activity_sect"]:hover h4[class*="on_default"] {
+    display: none;
+}
+
+#activity .activity_content div[class*="activity_sect"]:hover h4[class*="on_hover"] {
+    display: block;
     color: #f5a623;
 }
 
@@ -438,8 +446,8 @@ h1, h2, h3, h4, h5, h6, div, p {
 }
 
 #contact .contact_link_btn {
-    width: 260px;
-    height: 260px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     margin: 0 auto;
     background: #f6a623;

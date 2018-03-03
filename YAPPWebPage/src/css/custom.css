@@ -174,11 +174,7 @@ h1, h2, h3, h4, h5, h6, div, p {
   margin-left: -2px;
 }
 
-@media screen and (max-width: 991px) {
-	.to-top-btn {
-	    display: none !important;
-	}
-}
+
 
 
 /* 메인 슬라이드 영역 */
@@ -188,15 +184,15 @@ h1, h2, h3, h4, h5, h6, div, p {
 }
 
 .yp_main_slide .carousel-item:nth-child(1)  {
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../public/img/main/main_slide01.jpg') no-repeat center / cover;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../../public/img/main/main_slide01.jpg') no-repeat center / cover;
 }
 
 .yp_main_slide .carousel-item:nth-child(2) {
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../public/img/main/main_slide02.jpg') no-repeat center / cover;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../../public/img/main/main_slide02.jpg') no-repeat center / cover;
 }
 
 .yp_main_slide .carousel-item:nth-child(3) {
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../public/img/main/main_slide03.jpg') no-repeat center / cover;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../../public/img/main/main_slide03.jpg') no-repeat center / cover;
 }
 
 .carousel-caption {
@@ -256,25 +252,21 @@ h1, h2, h3, h4, h5, h6, div, p {
     color: #4a4a4a;
 }
 
+.plain_size_txt {
+    font-size: 18px;
+    line-height: 38px;
+    letter-spacing: -1px;
+}
+
 /* 메인 컨텐츠 섹션별 설정 */
 
-@media screen and (max-width: 991px) {
-    .yp_main_content > section .row,
-    .yp_main_content > section .col {
-        display: block;
-    }
-    
-    .yp_main_content .project_content > .row {
-        display: flex;
-    }
-}
 
 
 .about_txt>p {
     font-size: 18px;
     font-weight: 300;
-    line-height: 1.44;
-    letter-spacing: -0.7px;
+    line-height: 38px;
+    letter-spacing: -1px;
 }
 
 .about_txt>p > span {
@@ -286,17 +278,13 @@ h1, h2, h3, h4, h5, h6, div, p {
     margin-top: 30px;
 }
 
-.yp_main_content #about img {
-    margin-top: 95px;
-}
-
 #history {
     background: #fefaf2;
 }
 
 #introduction > .intro_count {
     padding: 120px 0;
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../public/img/intro_count_bg.jpg') no-repeat center / cover;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../../public/img/intro_count_bg.jpg') no-repeat center / cover;
     background-position-y: 60%;
     background-attachment: fixed;
 }
@@ -380,29 +368,41 @@ h1, h2, h3, h4, h5, h6, div, p {
     padding: 70px 35px;
     border: 1px solid #eee;
     transition: all .4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#activity .activity_content .activity_sect01 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../public/img/main/main_activity01.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect02 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../public/img/main/main_activity02.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect03 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../public/img/main/main_activity03.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect04 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../public/img/main/main_activity04.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect01 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../public/img/main/main_activity01.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect02 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../public/img/main/main_activity02.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect03 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../public/img/main/main_activity03.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect04 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../public/img/main/main_activity04.jpg') no-repeat center / cover; }
 
-#activity .activity_content .activity_sect01:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../public/img/main/main_activity01.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect02:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../public/img/main/main_activity02.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect03:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../public/img/main/main_activity03.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect04:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../public/img/main/main_activity04.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect01:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../../public/img/main/main_activity01.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect02:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../../public/img/main/main_activity02.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect03:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../../public/img/main/main_activity03.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect04:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../../public/img/main/main_activity04.jpg') no-repeat center / cover; }
 
 
 #activity .activity_content h4 {
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 1.4;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.3px;
     text-align: left;
     color: #ffffff;
 }
 
-#activity .activity_content div[class*="activity_sect"]:hover h4 {
+#activity .activity_content div[class*="activity_sect"] h4[class*="on_hover"] {
+    display: none;
+}
+
+#activity .activity_content div[class*="activity_sect"]:hover h4[class*="on_default"] {
+    display: none;
+}
+
+#activity .activity_content div[class*="activity_sect"]:hover h4[class*="on_hover"] {
+    display: block;
     color: #f5a623;
 }
 
@@ -446,8 +446,8 @@ h1, h2, h3, h4, h5, h6, div, p {
 }
 
 #contact .contact_link_btn {
-    width: 260px;
-    height: 260px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     margin: 0 auto;
     background: #f6a623;
@@ -475,114 +475,6 @@ h1, h2, h3, h4, h5, h6, div, p {
     font-size: 35px;
 }
 
-/* 메인페이지 반응형 미디어 쿼리 */
-@media screen and (max-width: 991px) {
-    .yp_main_content section:not(#introduction) {
-        padding: 70px 15px;
-    }
-    
-    /* nav */
-    
-    .navbar-brand {
-        margin-left: 10px;
-    }
-    
-    .yp_main_nav {
-        padding: .5rem 0;
-    }
-    
-    .yp_main_nav .navbar-nav {
-        position: relative;
-    }
-    
-    .yp_main_nav .navbar-nav > li {
-        flex-basis: auto;
-    }
-    
-    .yp_main_nav .navbar-nav > li > a {
-        text-align: right;
-        font-size: 14px;
-        font-weight: 400;
-    }
-    
-    
-    /* slide */
-    .yp_main_slide .carousel-item {
-        height: 40vh;
-    }
-    
-    a[class*="carousel-control"] i {
-        font-size: 2em;
-    }
-    
-    
-    #introduction > .intro_count {
-        padding: 40px 0 10px;
-    }
-    
-    #introduction>.intro_count .num {
-        margin-bottom: 45px;
-        font-size: 25px;
-    }
-    
-    /* about */
-    .yp_main_content #about img {
-        margin-top: 40px;
-    }
-    
-    .yp_main_content section#activity {
-        padding: 70px 0;
-    }
-    
-    /* introduction */
-    
-    #introduction>.intro_content p {
-        margin-bottom: 45px;
-    }
-    
-    /* activity */
-    
-    .yp_main_content .activity_intro {
-        padding: 0 15px;
-    }
-    
-    #activity .activity_content {
-        padding-top: 25px;
-    }
-    
-    #activity .activity_content div[class*="activity_sect"] {
-        height: 220px;
-    }
-    
-    #activity .small_title {
-        margin: 20px 0;
-    }
-    
-    #activity .activity_content h4 {
-        font-size: 22px;
-    }
-    
-    
-    /* project */
-     
-    #project .project_content {
-        padding: 50px 0;
-    }   
-    
-    #project .project_content figure {
-        padding: 7px;
-    }
-    
-    #project .project_content .col {
-        width: calc(100% / 3);
-        flex-basis: auto;
-    }
-    
-    #project .project_content figure img {
-        border-radius: 5px;
-    }
-    
-}
 
 
 /*======================  ACTIVITY 페이지 ======================*/

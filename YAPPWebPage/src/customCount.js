@@ -29,7 +29,6 @@ animations = getAnimations();
 
 $(window).scroll(function () {
         if (1500 < $(document).scrollTop() && $(document).scrollTop() < 1600) {
-            console.log('카운트 실행');
             fireAnimations(animations);
         }
     }

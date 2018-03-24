@@ -2,3 +2,7 @@
     left: unset;
     margin-right: 163px;
 }
+
+.about_txt>p {
+    font-size: 14px;
+}

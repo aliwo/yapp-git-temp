@@ -1,7 +1,19 @@
+var SW = { // sw 가 만들어 둔 헬퍼 함수들입니다.
+    getAbsPos : function (el) {
+        // 특정 element 의 절대 x y 값을 반환합니다.
+        for (var lx=0, ly=0;
+             el != null;
+             lx += el.offsetLeft, ly += el.offsetTop, el = el.offsetParent);
+        return {x: lx,y: ly};
+    },
 
-//animation 추가, 추후 스크롤 값에 의해 fire 되도록 구현하면 됩니다.
+    getScrollBottom : function () {
+        return $(window).scrollTop() + $(window).height();
+    }
+};
 
-var defaultAnimOption = {
+
+var defaultAnimOption = { // 기본 애니메이션 설정
     useEasing: true,
     useGrouping: true,
     separator: ',',
@@ -28,7 +40,7 @@ function fireAnimations(animations) {
 animations = getAnimations();
 
 $(window).scroll(function () {
-        if (1500 < $(document).scrollTop() && $(document).scrollTop() < 1600) {
+        if (SW.getAbsPos(document.getElementById('count-div')).y < SW.getScrollBottom()) {
             fireAnimations(animations);
         }
     }

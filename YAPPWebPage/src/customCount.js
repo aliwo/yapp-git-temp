@@ -8,16 +8,30 @@ var defaultAnimOption = {
     decimal: '.'
 };
 
-var animations = [new CountUp("accumulateMember", 0, 230, 0, 3, defaultAnimOption),
-                    new CountUp("currentMember", 0, 41, 0, 3, defaultAnimOption),
-                    new CountUp("accmulateDownload", 0, 377658, 0, 3, defaultAnimOption)];
 
-for (var i=0; i<animations.length; i++) {
-    if (!animations[i].error) {
-        animations[i].start();
-    } else {
-        console.error(animations[i].error);
+function getAnimations() {
+    return [new CountUp("accumulateMember", 0, 230, 0, 3, defaultAnimOption),
+        new CountUp("currentMember", 0, 41, 0, 3, defaultAnimOption),
+        new CountUp("accmulateDownload", 0, 377658, 0, 3, defaultAnimOption)];
+}
+
+function fireAnimations(animations) {
+    for (var i=0; i<animations.length; i++) {
+        if (!animations[i].error) {
+            animations[i].start();
+        } else {
+            console.error(animations[i].error);
+        }
     }
 }
 
-console.log('customCount 실행');
+animations = getAnimations();
+
+$(window).scroll(function () {
+        if (1500 < $(document).scrollTop() && $(document).scrollTop() < 1600) {
+            console.log('카운트 실행');
+            fireAnimations(animations);
+        }
+    }
+);
+

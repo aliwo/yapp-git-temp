@@ -6,3 +6,16 @@
 .about_txt>p {
     font-size: 14px;
 }
+
+.activity-description-container {
+    padding-top: 20px;
+}
+
+.activity-description-container p{
+    padding: 6px;
+}
+
+.activity_content .row .col{
+    margin-left: 5px;
+    margin-right: 5px;
+}

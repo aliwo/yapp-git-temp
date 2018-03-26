@@ -2,6 +2,9 @@
     display: none !important;
 }
 
+.hidden-in-mobile {
+    display: none;
+}
 
 
 .yp_main_content > section .row,

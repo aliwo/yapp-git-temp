@@ -1,10 +1,13 @@
 /**
  * Created by aliwo on 2018-03-31.
  */
+
+var YappApp;
+
 (function () {
     'use strict';
 
-    angular.module('YappApp', [])
+    YappApp = angular.module('YappApp', [])
 
         .controller('MainController', function ($scope) {
 

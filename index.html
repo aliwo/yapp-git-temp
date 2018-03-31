@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="YappApp">
 
 <head>
 	<title>YAPP 공식홈페이지</title>
@@ -31,9 +31,13 @@
 	<!-- css for pc -->
 	<link rel="stylesheet" media="screen and (min-width: 992px)" href="YAPPWebPage/src/css/pc.css">
 
+	<script src="YAPPWebPage/src/library/angular.min.js"></script>
+	<script src="YAPPWebPage/src/app.js"></script>
+
 </head>
 
-<body data-spy="scroll" data-target=".yp_main_nav" data-offset="50">
+<body data-spy="scroll" data-target=".yp_main_nav" data-offset="50" ng-controller="MainController">
+
 	<div id="yappApp">
 		<nav role="navigation" class="yp_main_nav navbar navbar-expand-lg navbar-light">
 			<a class="navbar-brand" href="#"><h1><img src="./YAPPWebPage/public/img/logo.png" alt="작은 아이디어를 통해 세상을 크게 변화시키는 대학생 연합 기업형 IT 동아리, YAPP" /></h1></a>

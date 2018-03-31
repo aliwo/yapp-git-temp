@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="YappApp">
 
 <head>
 	<title>YAPP 공식홈페이지</title>
@@ -24,10 +24,21 @@
 	<!--XE Icon-->
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 	<!--Custom css-->
-	<link rel="stylesheet" href="./YAPPWebPage/src/custom.css">
+	<link rel="stylesheet" href="YAPPWebPage/src/css/custom.css">
+
+	<!-- css for mobile -->
+	<link rel="stylesheet" media="screen and (max-width: 991px)" href="YAPPWebPage/src/css/mobile.css">
+	<!-- css for pc -->
+	<link rel="stylesheet" media="screen and (min-width: 992px)" href="YAPPWebPage/src/css/pc.css">
+
+	<!-- AngularJS -->
+	<script src="YAPPWebPage/src/library/angular.min.js"></script>
+	<script src="YAPPWebPage/src/app.js"></script>
+	<script src="YAPPWebPage/src/components/chronicle.js"></script>
 </head>
 
-<body data-spy="scroll" data-target=".yp_main_nav" data-offset="50">
+<body data-spy="scroll" data-target=".yp_main_nav" data-offset="50" ng-controller="MainController">
+
 	<div id="yappApp">
 		<nav role="navigation" class="yp_main_nav navbar navbar-expand-lg navbar-light">
 			<a class="navbar-brand" href="#"><h1><img src="./YAPPWebPage/public/img/logo.png" alt="작은 아이디어를 통해 세상을 크게 변화시키는 대학생 연합 기업형 IT 동아리, YAPP" /></h1></a>
@@ -35,7 +46,7 @@
 		 <!-- 	</button>-->
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<div class="container">
-					<ul class="navbar-nav nav-justified">
+					<ul class="navbar-nav nav-justified navbar-resp">
 						<li class="nav-item active">
 							<a class="nav-link" href="#about">ABOUT</a>
 						</li>
@@ -90,15 +101,16 @@
 		<main role="main" class="yp_main_content">
 			<section id="about">
 				<div class="container">
+					<div>
+					<h3 class="sect_title">
+						<span>A</span>BOUT
+					</h3>
+					</div>
 					<div class="row">
 						<div class="col">
-							<h3 class="sect_title">
-								<span>A</span>BOUT
-							</h3>
 							<p class="sect_title_des">얍은<br>어떤 <span>동아리</span>인가요?</p>
 							<div class="about_txt">
-								<p class="txt_color1"><span>Y</span>our own idea can change the <span>A</span>ctual world at anytime <br class="hidden-xs">with <span>P</span>assion and <span>P</span>otential. Start up together!</p>	
-								<p class="txt_color2">YAPP은 대학생들의 다양한 아이디어와 열정, 그리고 가능성을 바탕으로 <br class="hidden-xs">조그마한 변화일지라도 의미가 있는 일을 해나가고, 기존에 없던 새로운 가치를 <br class="hidden-xs">만들기 위해 노력하는 대학생 연합 기업형 IT동아리입니다.</p>
+								<p class="txt_color2">YAPP은 대학생들의 다양한 아이디어와 열정, 그리고 가능성을 바탕으로 <br class="hidden-xs">조그마한 변화일지라도 의미가 있는 일을 해나가고, 기존에 없던<br class="hidden-xs"> 새로운 가치를 만들기 위해 노력하는 대학생 연합 기업형 IT동아리입니다.</p>
 							</div>
 						</div>
 						<div class="col">
@@ -107,13 +119,12 @@
 					</div>
 				</div>
 			</section>
-			<section id="history">
-				<div class="container">
-					<img src="./YAPPWebPage/public/img/main/history.jpg" alt="" class="center-block img-responsive">
-				</div>
-			</section>
+
+			<chronicle>
+
+			</chronicle>
 			<section id="introduction">
-				<div role="complementary" class="intro_count text-center">
+				<div role="complementary" class="intro_count text-center" id="count-div">
 					<div class="container">
 						<div class="row">
 							<div class="col">
@@ -172,45 +183,78 @@
 								<img src="./YAPPWebPage/public/img/main/activity_icon.png" alt="" class="img-responsive" style="max-width: 300px;"/>
 							</div>
 							<div class="col">
-								<p class="activity_des">YAPP의 필수 활동 기간은 6개월로, 이 기간 동안 기획자, 디자이너, 개발자가 협업하여 하나의 IT서비스를 런칭하기를 목표로 합니다. 매주 1회 서울 지역에서 정기 세션을 진행하며, 이 때 OB초청 강연이나 테마 세션 등을 진행합니다. <br class="hidden-xs">덧붙여, 활동 기간 도중에 프로젝트를 위해 1박 2일간 2회의 해커톤 형식 행사 devCamp가 있습니다. devCamp이후에 열리는 Homecoming Day에서는 6개월간의 결과물을 현직자 선배 앞에서 발표합니다. 이외에도 MT나 운동회 등의 각종 친목활동 또한 합니다.
+								<p class="activity_des">YAPP의 필수 활동 기간은 6개월로
+									<br class="hidden-xs"> 이 기간 동안 기획자, 디자이너, 개발자가 협업하여 하나의 IT서비스 런칭을 목표로 합니다.
+									<br class="hidden-xs"> 매주 1회 서울 지역에서 정기 세션이 이루어지며<br>OB초청 강연이나 테마 세션 등을 진행합니다.
+									<br class="hidden-xs"><br class="hidden-xs">
+									활동 기간중 프로젝트를 위해 해커톤 형식 행사 devCamp가 있으며,
+									<br class="hidden-xs"> 이후 현직자 선배의 조언을 들을 수 있는 Homecoming Day가 진행됩니다.
+									<br class="hidden-xs"> 이외에도 MT나 운동회 등의 각종 친목활동이 있습니다.
 								</p>
 							</div>
 						</div>	
 					</div>
 				</div>
 				<div class="activity_content">
-					<div class="row">
+					<div class="row" style="flex-wrap: nowrap">
 						<div class="col">
-							<span class="small_title">ACTIVITY 01.</span>
 							<a href="./activity.html">
 								<div class="activity_sect01">
-									<h4>데브캠프 & <br class="hidden-xs">홈커밍 데이</h4>
+									<h4 class="on_default">ACTIVITY 01.</h4>
+									<h4 class="on_hover"> 데브캠프 & <br class="hidden-xs">홈커밍 데이</h4>
+								</div>
+								<div class="activity-description-container hidden-in-mobile">
+									<p class="activity_des" style="margin-top: 0px">
+										두 번의 1박2일 데브캠프를 통해 단기간 동안 프로젝트에 집중하고
+										홈커밍데이에서 프로젝트를 최종 런칭하고 발표합니다.
+									</p>
 								</div>
 							</a>
 						</div>
 						<div class="col">
-							<span class="small_title">ACTIVITY 02.</span>
 							<a href="./activity.html">
 								<div class="activity_sect02">
-									<h4>정규세션 / 스터디 / <br class="hidden-xs">OB강연</h4>
+									<h4 class="on_default">ACTIVITY 02.</h4>
+									<h4 class="on_hover"> 정규 세션 /
+										<br class="hidden-xs"> 스터디 /
+										<br class="hidden-xs"> OB 강연
+									</h4>
 								</div>
 							</a>
+							<div class="activity-description-container hidden-in-mobile">
+								<p class="activity_des" style="margin-top: 0px">
+									YAPP에서는 매주 세션을 진행하고 스터디와 OB 강연 등을
+									통해 개인 역량 강화 및 협업 경험 함양을 도모합니다.
+								</p>
+							</div>
 						</div>
 						<div class="col">
-							<span class="small_title">ACTIVITY 03.</span>
 							<a href="./activity.html">
 								<div class="activity_sect03">
-									<h4>대외활동</h4>
+									<h4 class="on_default">ACTIVITY 03.</h4>
+									<h4 class="on_hover"> 대외활동 </h4>
 								</div>
 							</a>
+							<div class="activity-description-container hidden-in-mobile">
+								<p class="activity_des" style="margin-top: 0px">
+									YAPP에서는 IT 전공 대학생을 위한 적극적인 대외활동을 추구합니다.
+									유니톤 등을 주관하며 IT 선순환을 위해 노력하고 있습니다
+								</p>
+							</div>
 						</div>
 						<div class="col">
-							<span class="small_title">ACTIVITY 04.</span>
 							<a href="./activity.html">
 								<div class="activity_sect04">
-									<h4>친목활동</h4>
+									<h4 class="on_default">ACTIVITY 04.</h4>
+									<h4 class="on_hover"> 친목활동 </h4>
 								</div>
 							</a>
+							<div class="activity-description-container hidden-in-mobile">
+								<p class="activity_des" style="margin-top: 0px">
+									개인의 IT 역량 강화 뿐만 아니라 번개, OT 등을 통해
+									동아리원 사이의 친목을 도모합니다
+								</p>
+							</div>
 						</div>	
 					</div>
 				</div>
@@ -360,7 +404,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="YAPPWebPage/src/library/countUp.js"></script>
 	<!--custom js-->
+	<script src="./YAPPWebPage/src/customCount.js"></script>
 	<script src="./YAPPWebPage/src/custom.js"></script>
 </body>
 

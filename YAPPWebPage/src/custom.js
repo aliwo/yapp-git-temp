@@ -51,16 +51,16 @@ $('.to-top-btn').click(function() {
 // fullpage js
 
 $(document).ready(function() {
-	$('#fullpage').fullpage({
-	    menu: '#activityNav',
-	    loopBottom: false,
-		loopTop: false,
-		responsiveWidth: 1300,
-		anchors: ['firstSect', 'secondSect', 'thirdSect', 'fourthSect']
-	});
+	// $('#fullpage').fullpage({
+	//     menu: '#activityNav',
+	//     loopBottom: false,
+	// 	loopTop: false,
+	// 	responsiveWidth: 1300,
+	// 	anchors: ['firstSect', 'secondSect', 'thirdSect', 'fourthSect']
+	// });
 });
 
-var viewer01 = new Viewer(document.getElementById('activityAlbum01'));
-var viewer02 = new Viewer(document.getElementById('activityAlbum02'));
-var viewer03 = new Viewer(document.getElementById('activityAlbum03'));
-var viewer04 = new Viewer(document.getElementById('activityAlbum04'));
+// var viewer01 = new Viewer(document.getElementById('activityAlbum01'));
+/// var viewer02 = new Viewer(document.getElementById('activityAlbum02'));
+// var viewer03 = new Viewer(document.getElementById('activityAlbum03'));
+// var viewer04 = new Viewer(document.getElementById('activityAlbum04'));

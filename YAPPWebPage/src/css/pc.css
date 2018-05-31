@@ -3,8 +3,18 @@
     margin-right: 163px;
 }
 
+.yp_main_content section:not(#introduction) {
+    padding-left: 12.9vw;
+}
+
+.sect_title {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
 .about_txt>p {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 38px;
 }
 
 .activity-description-container {

@@ -1,10 +1,35 @@
-.navbar-nav.nav-justified.navbar-resp { /* resp(responsive) 가 붙은 부분은  pc 혹은 mobile.css 에서 서로를 덮어 씌우도록 합시다. */
-    left: unset;
-    margin-right: 163px;
+.yp_main_nav {
+    position: relative;
+    margin-left: 330px;
+    margin-right: 330px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 0 0 0 0 ;
+    width: 80%;
+}
+
+.yapp-carousel p{
+    text-align: left;
+    font-size: 50px;
+    margin-left: 75px;
+}
+
+.carousel-caption {
+    top: 112px;
+}
+
+.yp_main_nav .navbar-nav>li>a {
+    color: #000000 !important;
 }
 
 .yp_main_content section:not(#introduction) {
-    padding-left: 12.9vw;
+    padding-left: 330px;
+    padding-right: 330px;
+}
+
+.navbar-nav.nav-justified.navbar-resp { /* resp(responsive) 가 붙은 부분은  pc 혹은 mobile.css 에서 서로를 덮어 씌우도록 합시다. */
+    left: unset;
+    margin-right: 163px;
 }
 
 .sect_title {

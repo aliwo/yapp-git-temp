@@ -10,14 +10,19 @@
         }
     });
 
-    function chronicleController() {
-        // var chronicleController 를 쓰면 안 먹음. 왜 일까? 자바스크립트는 function 을 먼저 번역하고
-        // 코드를 실행하는 건가?
+    chronicleController.$inject = ['$http'];
+
+    function chronicleController($http) {
         var chController = this;
 
         chController.sayHi = function () {
             console.log('안녕! 난 chronicleController 야!')
-        }
+        };
+
+        chController.chronicle = $http({'url':'./YAPPWebPage/public/meta/chronicle.json'}).then(function (response) {
+            chController.chronicle = response.data;
+        });
+
 
     }
 

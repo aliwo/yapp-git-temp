@@ -21,7 +21,7 @@ body {
 
 
 h1, h2, h3, h4, h5, h6, div, p {
-    font-family: 'Noto Sans KR', 'NanumBarunGothic', 'NanumGothic', "나눔고딕", 'sans-serif';
+    font-family: 'NanumBarunGothic', 'NanumGothic', "나눔고딕", 'sans-serif';
     -ms-word-break: keep-all;
     word-break: keep-all;
 }
@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5, h6, div, p {
     font-size: 38px;
     font-weight: 500;
     letter-spacing: -.7px;
-    color: #4a4a4a;
+    color: #fff;
     margin-bottom: 35px;
 }
 
@@ -228,12 +228,12 @@ h1, h2, h3, h4, h5, h6, div, p {
     font-weight: 300;
     line-height: 1.32;
     letter-spacing: -0.05em;
-    color: #4a4a4a;
+    color: #ffffff;
     margin-bottom: 50px;
 }
 
 .sect_title_des > span {
-    color: #000;
+    color: #fff;
     font-weight: bold;
 }
 
@@ -437,8 +437,8 @@ h1, h2, h3, h4, h5, h6, div, p {
     font-weight: 300;
     line-height: 1.75;
     letter-spacing: -1.4px;
-    text-align: center;
-    color: #4a4a4a;
+    text-align: left;
+    color: #fff;
 }
 
 #contact .container_sm {
@@ -623,4 +623,8 @@ h1, h2, h3, h4, h5, h6, div, p {
 
 .activity_album li:nth-child(6):hover .album_more_num {
     display: none;
+}
+
+#contact{
+    background-color: #4a4a4a;
 }

@@ -123,3 +123,7 @@ a[class*="carousel-control"] i {
     border-radius: 5px;
 }
 
+contact .col .col_paragraph {
+    display: none;
+}
+

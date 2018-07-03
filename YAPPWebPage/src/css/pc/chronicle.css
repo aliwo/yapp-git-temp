@@ -1,12 +1,4 @@
 
-chronicle h1, h2, h3, h4, h5 {
-    color: white;
-    font-weight: normal;
-}
-
-chronicle .chronicle-picker {
-    display: flex;
-}
 
 .chronicle-picker .prev, .next {
     font-size: 50px;

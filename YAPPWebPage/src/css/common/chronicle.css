@@ -1,11 +1,25 @@
+chronicle h1, h2, h3, h4, h5 {
+    color: #4a4a4a;
+    font-weight: normal;
+}
+
 #history {
     background-color: white;
 }
 
+#chronicle-carousel {
+    display: flex;
+}
+
+
 #chronicle-carousel .slick-slide{
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 #chronicle-carousel .slick-slide.slick-center{
     opacity: 1;
+}
+
+.slick-prev.slick-arrow {
+
 }

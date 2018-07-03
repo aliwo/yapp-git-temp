@@ -4,37 +4,42 @@
 
     <div class="chronicle-picker">
 
-        <a class="prev"
-           href="#chronicle-carousel"
-           role="button"
-           data-slide="prev">
-				    <span aria-hidden="true"><i class="xi-angle-left-thin xi-4x"></i></span>
-				    <span class="sr-only">Previous</span>
-        </a>
+        <!--<a class="prev"-->
+           <!--href="#chronicle-carousel"-->
+           <!--role="button"-->
+           <!--data-slide="prev">-->
+				    <!--<span aria-hidden="true"><i class="xi-angle-left-thin xi-4x"></i></span>-->
+				    <!--<span class="sr-only">Previous</span>-->
+        <!--</a>-->
 
-        <div class="chronicle-content carousel slide" id="chronicle-carousel">
-            <div class="carousel-inner">
+        <div id="chronicle-carousel" style="width: 100%">
 
-                <div class="carousel-item"
-                        ng-repeat="history in $ctrl.chronicle"
-                        ng-class="{active:$last}">
-                    <div class="chronicle-circle">
-                            {{history.name}} 기
-                    </div>
-                </div>
-
-            </div>
+                <div><img src="YAPPWebPage/public/img/chronicles/others.png" ></div>
+                <div ><img src="YAPPWebPage/public/img/chronicles/others.png" ></div>
+                <div ><img src="YAPPWebPage/public/img/chronicles/others.png" ></div>
+                <div ><img src="YAPPWebPage/public/img/chronicles/others.png"></div>
+                <div ><img src="YAPPWebPage/public/img/chronicles/others.png"></div>
+                <!-- 5기 까지는 '준비중' -->
+                <div ><img src="YAPPWebPage/public/img/chronicles/6.png"></div>
+                <div ><img src="YAPPWebPage/public/img/chronicles/7.png"></div>
+                <div ><img src="YAPPWebPage/public/img/chronicles/7.5.png"></div>
+                <div ><img src="YAPPWebPage/public/img/chronicles/8.png"></div>
+                <div><img src="YAPPWebPage/public/img/chronicles/8.5.png"></div>
+                <div><img src="YAPPWebPage/public/img/chronicles/9.png"></div>
+                <div><img src="YAPPWebPage/public/img/chronicles/10.png"></div>
+                <div><img src="YAPPWebPage/public/img/chronicles/11.png"></div>
+                <div><img src="YAPPWebPage/public/img/chronicles/12.png"></div>
 
         </div>
 
 
-        <a class="next"
-           href="#chronicle-carousel"
-           role="button"
-           data-slide="next">
-				    <span aria-hidden="true"><i class="xi-angle-right-thin xi-4x"></i></span>
-				    <span class="sr-only">Next</span>
-        </a>
+        <!--<a class="next"-->
+           <!--href="#chronicle-carousel"-->
+           <!--role="button"-->
+           <!--data-slide="next">-->
+				    <!--<span aria-hidden="true"><i class="xi-angle-right-thin xi-4x"></i></span>-->
+				    <!--<span class="sr-only">Next</span>-->
+        <!--</a>-->
 
     </div>
 </div>

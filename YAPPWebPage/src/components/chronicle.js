@@ -19,10 +19,13 @@
             console.log('안녕! 난 chronicleController 야!')
         };
 
-        chController.chronicle = $http({'url':'./YAPPWebPage/public/meta/chronicle.json'}).then(function (response) {
-            chController.chronicle = response.data;
-        });
+        $('#chronicle-carousel').slick({
+            slidesToShow : 2,
+            initialSlide : 12,
+            centerMode: true,
 
+        });
+        
 
     }
 

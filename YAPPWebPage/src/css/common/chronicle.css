@@ -1,0 +1,11 @@
+#history {
+    background-color: white;
+}
+
+#chronicle-carousel .slick-slide{
+    opacity: 0.8;
+}
+
+#chronicle-carousel .slick-slide.slick-center{
+    opacity: 1;
+}

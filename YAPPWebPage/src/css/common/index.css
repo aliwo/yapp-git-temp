@@ -212,11 +212,11 @@ h1, h2, h3, h4, h5, h6, div, p {
 /* 메인 컨텐츠 섹션 기본설정 */
 
 .sect_title {
-    font-size: 38px;
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: -.7px;
     color: #4a4a4a;
-    margin-bottom: 35px;
+    margin-bottom: 18px;
 }
 
 .sect_title > span {
@@ -498,12 +498,12 @@ h1, h2, h3, h4, h5, h6, div, p {
 }
 
 .yp_activity_content .sect_title {
-    font-size: 36px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.32;
     letter-spacing: -0.05em;
     color: #4a4a4a;
-    margin-bottom: 2em;
+    margin-bottom: 18px;
 }
 
 .activity_des_wrap .activity_des_title {

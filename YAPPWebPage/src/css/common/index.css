@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5, h6, div, p {
     font-size: 38px;
     font-weight: 500;
     letter-spacing: -.7px;
-    color: #fff;
+    color: #4a4a4a;
     margin-bottom: 35px;
 }
 
@@ -228,12 +228,12 @@ h1, h2, h3, h4, h5, h6, div, p {
     font-weight: 300;
     line-height: 1.32;
     letter-spacing: -0.05em;
-    color: #ffffff;
+    color: #4a4a4a;
     margin-bottom: 50px;
 }
 
 .sect_title_des > span {
-    color: #fff;
+    color: #4a4a4a;
     font-weight: bold;
 }
 

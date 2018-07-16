@@ -384,15 +384,15 @@ div.activity_end {
     justify-content: center;
 }
 
-#activity .activity_content .activity_sect01 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../../public/img/main/main_activity01.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect02 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../../public/img/main/main_activity02.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect03 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../../public/img/main/main_activity03.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect04 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../../public/img/main/main_activity04.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect01 { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../../../public/img/main/main_activity01.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect02 { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../../../public/img/main/main_activity02.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect03 { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../../../public/img/main/main_activity03.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect04 { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../../../public/img/main/main_activity04.jpg') no-repeat center / cover; }
 
-#activity .activity_content .activity_sect01:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../../../public/img/main/main_activity01.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect02:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../../../public/img/main/main_activity02.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect03:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../../../public/img/main/main_activity03.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect04:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../../../public/img/main/main_activity04.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect01:hover { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../../public/img/main/main_activity01.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect02:hover { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../../public/img/main/main_activity02.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect03:hover { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../../public/img/main/main_activity03.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect04:hover { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../../public/img/main/main_activity04.jpg') no-repeat center / cover; }
 
 
 #activity .activity_content h4 {
@@ -414,7 +414,7 @@ div.activity_end {
 
 #activity .activity_content div[class*="activity_sect"]:hover h4[class*="on_hover"] {
     display: block;
-    color: #f5a623;
+    color: white;
 }
 
 #project {

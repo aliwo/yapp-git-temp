@@ -6,6 +6,11 @@
     display: none;
 }
 
+.about_img {
+    width: 203px;
+    height: 58px;
+}
+
 
 .yp_main_content > section .row,
 .yp_main_content > section .col {

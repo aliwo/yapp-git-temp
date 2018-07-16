@@ -5,6 +5,11 @@
     width: 1260px;
 }
 
+.about_img {
+    width: 406px;
+    height: 112px
+}
+
 .navbar-brand {
     margin-left: 0;
 }

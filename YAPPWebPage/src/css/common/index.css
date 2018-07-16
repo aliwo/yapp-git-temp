@@ -21,7 +21,7 @@ body {
 
 
 h1, h2, h3, h4, h5, h6, div, p {
-    font-family: 'Noto Sans KR', 'NanumBarunGothic', 'NanumGothic', "나눔고딕", 'sans-serif';
+    font-family: 'NanumBarunGothic', 'NanumGothic', "나눔고딕", 'sans-serif';
     -ms-word-break: keep-all;
     word-break: keep-all;
 }
@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6, div, p {
 /* 푸터 영역 */
 
 .yp_footer {
-    background: #f7f7f7;
+    background: #f5a623;
     padding: 50px 0;
 }
 
@@ -184,15 +184,15 @@ h1, h2, h3, h4, h5, h6, div, p {
 }
 
 .yp_main_slide .carousel-item:nth-child(1)  {
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../../public/img/main/main_slide01.jpg') no-repeat center / cover;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../../../public/img/main/main_slide01.jpg') no-repeat center / cover;
 }
 
 .yp_main_slide .carousel-item:nth-child(2) {
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../../public/img/main/main_slide02.jpg') no-repeat center / cover;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../../../public/img/main/main_slide02.jpg') no-repeat center / cover;
 }
 
 .yp_main_slide .carousel-item:nth-child(3) {
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../../public/img/main/main_slide03.jpg') no-repeat center / cover;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../../../public/img/main/main_slide03.jpg') no-repeat center / cover;
 }
 
 .carousel-caption {
@@ -212,11 +212,11 @@ h1, h2, h3, h4, h5, h6, div, p {
 /* 메인 컨텐츠 섹션 기본설정 */
 
 .sect_title {
-    font-size: 38px;
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: -.7px;
     color: #4a4a4a;
-    margin-bottom: 35px;
+    margin-bottom: 18px;
 }
 
 .sect_title > span {
@@ -233,7 +233,7 @@ h1, h2, h3, h4, h5, h6, div, p {
 }
 
 .sect_title_des > span {
-    color: #000;
+    color: #4a4a4a;
     font-weight: bold;
 }
 
@@ -284,9 +284,21 @@ h1, h2, h3, h4, h5, h6, div, p {
 
 #introduction > .intro_count {
     padding: 120px 0;
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../../public/img/intro_count_bg.jpg') no-repeat center / cover;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../../../public/img/intro_count_bg.jpg') no-repeat center / cover;
     background-position-y: 60%;
     background-attachment: fixed;
+}
+
+#introduction > .intro_end {
+    padding: 200px 0;
+    background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url('../../../public/img/intro_end_bg.png') no-repeat center / cover;
+    background-position-y: 60%;
+}
+
+div.activity_end {
+    padding: 200px 0;
+    background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url('../../../public/img/activity_end_bg.png') no-repeat center / cover;
+    background-position-y: 60%;
 }
 
 #introduction>.intro_count .num {
@@ -320,11 +332,10 @@ h1, h2, h3, h4, h5, h6, div, p {
     letter-spacing: -.05em;
     text-align: center;
     color: #4a4a4a;
-    margin: 35px 0 25px;
 }
 
 #introduction>.intro_content p {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 1.5;
     letter-spacing: -1.2px;
@@ -333,7 +344,7 @@ h1, h2, h3, h4, h5, h6, div, p {
 }
 
 #activity .activity_des {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.75;
     letter-spacing: -1.8px;
@@ -373,15 +384,15 @@ h1, h2, h3, h4, h5, h6, div, p {
     justify-content: center;
 }
 
-#activity .activity_content .activity_sect01 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../public/img/main/main_activity01.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect02 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../public/img/main/main_activity02.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect03 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../public/img/main/main_activity03.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect04 { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../public/img/main/main_activity04.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect01 { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../../../public/img/main/main_activity01.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect02 { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../../../public/img/main/main_activity02.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect03 { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../../../public/img/main/main_activity03.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect04 { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../../../public/img/main/main_activity04.jpg') no-repeat center / cover; }
 
-#activity .activity_content .activity_sect01:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../../public/img/main/main_activity01.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect02:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../../public/img/main/main_activity02.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect03:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../../public/img/main/main_activity03.jpg') no-repeat center / cover; }
-#activity .activity_content .activity_sect04:hover { background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../../public/img/main/main_activity04.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect01:hover { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../../public/img/main/main_activity01.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect02:hover { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../../public/img/main/main_activity02.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect03:hover { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../../public/img/main/main_activity03.jpg') no-repeat center / cover; }
+#activity .activity_content .activity_sect04:hover { background: linear-gradient(rgba(255, 159, 0, .84), rgba(255, 159, 0, .84)), url('../../../public/img/main/main_activity04.jpg') no-repeat center / cover; }
 
 
 #activity .activity_content h4 {
@@ -403,7 +414,7 @@ h1, h2, h3, h4, h5, h6, div, p {
 
 #activity .activity_content div[class*="activity_sect"]:hover h4[class*="on_hover"] {
     display: block;
-    color: #f5a623;
+    color: white;
 }
 
 #project {
@@ -418,9 +429,6 @@ h1, h2, h3, h4, h5, h6, div, p {
     font-size: 18px;
 }
 
-#project .project_content {
-    padding: 50px 5em;
-}
 
 #project .project_content figure {
     padding: 1.5em 1.5em 2.5em;
@@ -431,51 +439,6 @@ h1, h2, h3, h4, h5, h6, div, p {
     -moz-border-radius: 1.5em;
     border-radius: 1.5em;
 }
-
-#contact .contact_txt {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.75;
-    letter-spacing: -1.4px;
-    text-align: center;
-    color: #4a4a4a;
-}
-
-#contact .container_sm {
-    margin-top: 100px;
-}
-
-#contact .contact_link_btn {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    margin: 0 auto;
-    background: #f6a623;
-    text-align: center;
-    color: #ffffff;
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-}
-
-#contact .contact_link_btn:hover {
-    text-decoration: none;
-}
-
-#contact .contact_link_btn>i {
-    font-size: 70px;
-}
-
-#contact .contact_link_btn>span {
-    font-weight: 300;
-    letter-spacing: -0.6px;
-    display: block;
-    font-size: 35px;
-}
-
-
 
 /*======================  ACTIVITY 페이지 ======================*/
 .yp_side_nav {
@@ -546,12 +509,12 @@ h1, h2, h3, h4, h5, h6, div, p {
 }
 
 .yp_activity_content .sect_title {
-    font-size: 36px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.32;
     letter-spacing: -0.05em;
     color: #4a4a4a;
-    margin-bottom: 2em;
+    margin-bottom: 18px;
 }
 
 .activity_des_wrap .activity_des_title {
@@ -623,4 +586,8 @@ h1, h2, h3, h4, h5, h6, div, p {
 
 .activity_album li:nth-child(6):hover .album_more_num {
     display: none;
+}
+
+#activity {
+    background-color: #f5f5f5;
 }

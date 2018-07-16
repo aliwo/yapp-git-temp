@@ -10,14 +10,33 @@
         }
     });
 
-    function chronicleController() {
-        // var chronicleController 를 쓰면 안 먹음. 왜 일까? 자바스크립트는 function 을 먼저 번역하고
-        // 코드를 실행하는 건가?
+    chronicleController.$inject = ['$http'];
+
+    function chronicleController($http) {
         var chController = this;
 
         chController.sayHi = function () {
             console.log('안녕! 난 chronicleController 야!')
-        }
+        };
+
+        $('#chronicle-carousel').slick({
+            initialSlide : 12,
+            centerMode: true,
+            prevArrow : '<img class="pc-only" src="YAPPWebPage/public/img/chronicles/arrow_back.png" ' +
+            'style="height: 60px; position: absolute; top:50%; left: -20px; z-index: 20">',
+            nextArrow : '<img class="pc-only" src="YAPPWebPage/public/img/chronicles/arrow_next.png" ' +
+            'style="height: 60px; position: absolute; top:50%; right: -20px; z-index: 20">',
+            variableWidth: true,
+            responsive : [{
+                breakpoint: 1770,
+                settings : {
+                    centerMode: true,
+                    prevArrow: '',
+                    nextArrow : ''
+                }
+            }]
+        });
+
 
     }
 

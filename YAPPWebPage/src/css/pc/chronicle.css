@@ -1,0 +1,37 @@
+
+.chronicle-picker {
+    margin-top: 100px;
+}
+
+.chronicle-picker .prev, .next {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.chronicle-picker .prev {
+    margin-right: 178px;
+}
+
+.chronicle-picker .next {
+    margin-left: 79px;
+}
+
+.chronicle-picker .next:hover {
+    color: #ffffff;
+}
+
+.chronicle-picker .chronicle-img {
+    margin-left: 226px;
+}
+
+.chronicle-circle {
+    border-radius: 50%;
+    width: 184px;
+    height: 184px;
+    line-height: 184PX;
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+    background-color: #fb9d00;
+    border: solid 3px #ffffff;
+}

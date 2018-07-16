@@ -98,3 +98,8 @@
 #activity .activity_content div[class*="activity_sect"] {
     height: 260px;
 }
+
+#project .project_intro_txt {
+    margin-top: 80px;
+    margin-bottom: 180px;
+}

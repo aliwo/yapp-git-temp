@@ -289,6 +289,12 @@ h1, h2, h3, h4, h5, h6, div, p {
     background-attachment: fixed;
 }
 
+#introduction > .intro_end {
+    padding: 200px 0;
+    background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url('../../../public/img/intro_end_bg.png') no-repeat center / cover;
+    background-position-y: 60%;
+}
+
 #introduction>.intro_count .num {
     font-size: 45px;
     font-weight: 500;

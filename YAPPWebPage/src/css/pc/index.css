@@ -90,3 +90,11 @@
     height: 68px;
     width: 68px;
 }
+
+#activity .activity_content .col {
+    background-color: white;
+}
+
+#activity .activity_content div[class*="activity_sect"] {
+    height: 260px;
+}

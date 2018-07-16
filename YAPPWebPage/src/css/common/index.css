@@ -320,11 +320,10 @@ h1, h2, h3, h4, h5, h6, div, p {
     letter-spacing: -.05em;
     text-align: center;
     color: #4a4a4a;
-    margin: 35px 0 25px;
 }
 
 #introduction>.intro_content p {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 1.5;
     letter-spacing: -1.2px;

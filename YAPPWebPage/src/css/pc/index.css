@@ -73,3 +73,20 @@
     margin-left: 5px;
     margin-right: 5px;
 }
+
+#introduction>.intro_content h4 {
+    text-align: left;
+}
+
+#introduction>.intro_content p {
+    text-align: left;
+}
+
+.intro_cont_wrap {
+    display: flex;
+}
+
+.intro_img {
+    height: 68px;
+    width: 68px;
+}
